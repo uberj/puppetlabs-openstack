@@ -1,6 +1,6 @@
 class openstack::common::ovs {
   $data_network = hiera('openstack::network::data')
-  $data_address = ip_for_network($data_network)
+  $data_address = hiera('openstack::network::data_gateway')
   $enable_tunneling = hiera('openstack::neutron::tunneling', true)
   $tunnel_types = hiera('openstack::neutron::tunnel_types', ['gre'])
   $tenant_network_type = hiera('openstack::neutron::tenant_network_type', ['gre'])
