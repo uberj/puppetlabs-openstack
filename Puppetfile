@@ -1,4 +1,4 @@
-forge "http://forge.puppetlabs.com"
+forge "http://forgeapi.puppetlabs.com"
 
 ## The core OpenStack modules
 
